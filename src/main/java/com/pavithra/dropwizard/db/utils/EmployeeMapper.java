@@ -1,6 +1,6 @@
-package com.baskar.dropwizard.db.utils;
+package com.pavithra.dropwizard.db.utils;
 
-import com.mysql.cj.api.mysqla.result.Resultset;
+
 import model.Employee;
 import org.skife.jdbi.v2.StatementContext;
 import org.skife.jdbi.v2.tweak.ResultSetMapper;
@@ -17,13 +17,13 @@ public class EmployeeMapper implements ResultSetMapper<Employee> {
 
 
         Employee employee=new Employee(
-                resultSet.getInt("id"),
-                resultSet.getString("name"),
-                resultSet.getInt("age"),
-                resultSet.getString("place"),
-                resultSet.getString("dob"),
-                resultSet.getString("phone"),
-                resultSet.getInt("deptid")
+                resultSet.getString("E_Id"),
+                resultSet.getString("E_Name"),
+                resultSet.getInt("E_Age"),
+                resultSet.getString("E_Dob"),
+                resultSet.getString("E_Place"),
+                resultSet.getInt("E_PhoneNumber"),
+                resultSet.getString("D_Id")
         );
         return employee;
     }

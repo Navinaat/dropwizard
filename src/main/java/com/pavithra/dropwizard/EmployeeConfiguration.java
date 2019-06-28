@@ -1,4 +1,4 @@
-package com.baskar.dropwizard;
+package com.pavithra.dropwizard;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;

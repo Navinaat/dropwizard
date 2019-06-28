@@ -1,13 +1,15 @@
-package com.baskar.dropwizard;
+package com.pavithra.dropwizard;
 
-import api.resource.EmployeeResources;
+import api.resource.Service.EmployeeResources;
 import api.resource.Service.EmployeeService;
-import com.baskar.dropwizard.db.EmployeeDAO;
+import com.pavithra.dropwizard.db.EmployeeDAO;
 import io.dropwizard.Application;
-import io.dropwizard.Configuration;
 import io.dropwizard.jdbi.DBIFactory;
 import io.dropwizard.setup.Environment;
 import org.skife.jdbi.v2.DBI;
+
+
+
 
 public class EmployeeApplication extends Application<EmployeeConfiguration> {
     public static void main(String[] args) throws Exception {

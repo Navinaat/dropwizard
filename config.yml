@@ -6,11 +6,10 @@ database:
   user: root
 
   # the password
-  password: root
+  password: 2724
 
   # the JDBC URL
-  url: jdbc:mysql://localhost:3306/employeemanagement?autoReconnect=false&useSSL=false
-
+  url: jdbc:mysql://localhost:3306/employeeportal2?autoReconnect=false&useSSL=false
   # any properties specific to your JDBC driver:
   properties:
     charSet: UTF-8

@@ -1,12 +1,7 @@
-package api.resource;
+package api.resource.Service;
 
 
-import api.resource.Service.EmployeeService;
-
-import javax.ws.rs.Consumes;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -22,6 +17,14 @@ public class EmployeeResources {
     public Response getEmployee()
     {
         return Response.ok().entity(this.employeeService.getEmployee()).build();
+    }
+
+
+    @GET
+    @Path("{E_Id}")
+    public Response getEmploye(@PathParam("E_Id") final String E_Id)
+    {
+        return Response.ok().entity(this.employeeService.getEmploye(E_Id)).build();
     }
 
 

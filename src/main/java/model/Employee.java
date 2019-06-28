@@ -2,91 +2,92 @@ package model;
 
 public class Employee {
 
-    private int eid;
-    private String name;
-    private int age;
-    private String place;
-    private String dob;
-    private String phone;
-    private int deptid;
+    private String E_Id;
+    private String E_Name;
+    private int E_Age;
+    private String E_Place;
+    private String E_Dob;
+    private int E_PhoneNumber;
+    private String D_Id;
+
 
     @Override
     public String toString() {
         return "EmployeeApplication{" +
-                "eid=" + eid +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                ", place='" + place + '\'' +
-                ", dob='" + dob + '\'' +
-                ", phone='" + phone + '\'' +
-                ", deptid=" + deptid +
+                "E_Id=" + E_Id +
+                ",E_Name='" + E_Name + '\'' +
+                ",E_Age=" + E_Age +
+                ",E_Place='" + E_Place + '\'' +
+                ",E_Dob='" + E_Dob + '\'' +
+                ",E_PhoneNumber='" + E_PhoneNumber + '\'' +
+                ",D_Id=" + D_Id +
                 '}';
     }
 
-    public Employee(int eid, String name, int age, String place, String dob, String phone, int deptid) {
-        this.eid = eid;
-        this.name = name;
-        this.age = age;
-        this.place = place;
-        this.dob = dob;
-        this.phone = phone;
-        this.deptid = deptid;
+    public Employee(String E_Id, String E_Name, int E_Age, String E_Place, String E_Dob, int E_PhoneNumber, String D_Id) {
+        this.E_Id= E_Id;
+        this.E_Name = E_Name;
+        this.E_Age = E_Age;
+        this.E_Place = E_Place;
+        this.E_Dob = E_Dob;
+        this.E_PhoneNumber = E_PhoneNumber;
+        this.D_Id = D_Id;
     }
 
-    public int getEid() {
-        return eid;
+    public String getE_Id() {
+        return E_Id;
     }
 
-    public void setEid(int eid) {
-        this.eid = eid;
+    public void setE_Id(String E_Id) {
+        this.E_Id= E_Id;
     }
 
-    public String getName() {
-        return name;
+    public String getE_Name() {
+        return E_Name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setE_Name(String E_Name) {
+        this.E_Name = E_Name;
     }
 
-    public int getAge() {
-        return age;
+    public int getE_Age() {
+        return E_Age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setE_Age(int E_Age) {
+        this.E_Age = E_Age;
     }
 
-    public String getPlace() {
-        return place;
+    public String getE_Place() {
+        return E_Place;
     }
 
-    public void setPlace(String place) {
-        this.place = place;
+    public void setE_Place(String E_Place) {
+        this.E_Place = E_Place;
     }
 
-    public String getDob() {
-        return dob;
+    public String getE_Dob() {
+        return E_Dob;
     }
 
-    public void setDob(String dob) {
-        this.dob = dob;
+    public void setE_Dob(String E_Dob) {
+        this.E_Dob = E_Dob;
     }
 
-    public String getPhone() {
-        return phone;
+    public int getE_PhoneNumber() {
+        return E_PhoneNumber;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setE_PhoneNumber(int E_PhoneNumber) {
+        this.E_PhoneNumber = E_PhoneNumber;
     }
 
-    public int getDeptid() {
-        return deptid;
+    public String getD_Id() {
+        return D_Id;
     }
 
-    public void setDeptid(int deptid) {
-        this.deptid = deptid;
+    public void setD_Id(String D_Id) {
+        this.D_Id = D_Id;
     }
 
 

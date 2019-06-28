@@ -1,6 +1,6 @@
 package api.resource.Service;
 
-import com.baskar.dropwizard.db.EmployeeDAO;
+import com.pavithra.dropwizard.db.EmployeeDAO;
 import model.Employee;
 
 import java.util.List;
@@ -15,6 +15,10 @@ public class EmployeeService {
     }
     public List<Employee> getEmployee(){
         return this.employeeDAO.getEmployee();
+    }
+    public Employee getEmploye(final String E_Id)
+    {
+        return  this.employeeDAO.getEmploye(E_Id);
     }
 
 }
